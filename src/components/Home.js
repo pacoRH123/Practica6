@@ -1,8 +1,14 @@
+import Carousel from "./Carousel";
+import Navbar from "./Navbar";
 
 
 const Home= ()=> {
-    <div>
-        <h1>"pagina principal"</h1>
+    return (
+        <div>
+        <h1>"Peces"</h1>
+        <Carousel/>
+
     </div>
+    )
 }
 export default Home;

@@ -1,7 +1,8 @@
 
 
 const About= ()=> {
-    <p>lorem ipsum</p>
-
+    return (
+        <p>francisco32pac@gmail.com</p>
+    )
 }
 export default About;
