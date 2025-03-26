@@ -1,8 +1,14 @@
+import PokemonCard from "./PokemonCard";
+import Pokedex from "./Pokedex";
 
 
 const About= ()=> {
     return (
-        <p>francisco32pac@gmail.com</p>
+        <div>
+            <Pokedex/>
+
+            <h1>pokemons</h1>
+        </div>
     )
 }
 export default About;
