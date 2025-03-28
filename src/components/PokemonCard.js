@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
 import {Box} from "@mui/material";
+import {Link} from "react-router-dom";
 
 const PokemonCard=({item})=>{
     return (
@@ -16,10 +17,13 @@ const PokemonCard=({item})=>{
                 </Box>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        nombre:{item.name}
+                        {item.name}
                     </Typography>
                     <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                        peso:{item.name}
+                        descripcion:{item.description}
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                        peso:{item.weight}
                     </Typography>
                     <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                         tipo: {item.types[0].type.name}
@@ -27,8 +31,8 @@ const PokemonCard=({item})=>{
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Share
+                <Button size="small" color="primary" button component={Link} to="/detalle">
+                    Detalle
                 </Button>
             </CardActions>
         </Card>
